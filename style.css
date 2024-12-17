@@ -1,0 +1,162 @@
+Reset default browser style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Styling */
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Logo Left and Right Positioning */
+.logo-left {
+    margin-right: auto;
+}
+
+.logo-right {
+    margin-left: auto;
+}
+
+body {
+    background: linear-gradient(to bottom, #74ebd5, #9face6);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Button container */
+div {
+    margin: 15px auto;
+}
+
+/* Buttons Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Automatic Mode and Manual Mode animations */
+#status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: background-color 0.5s, color 0.5s;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Background animation for status */
+.status-auto {
+    background-color: #ff4b5c;
+    color: white;
+    animation: statusFadeIn 1s ease-in-out;
+}
+
+.status-manual {
+    background-color: #4CAF50;
+    color: white;
+    animation: statusFadeIn 1s ease-in-out;
+}
+
+@keyframes statusFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* LDR Value Styling */
+#ldrValue {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: inline-block;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+#ldrValue:hover {
+    transform: scale(1.05);
+}
+
+/* Manual Control Button Animation */
+#manualControls {
+    display: block;
+    margin-top: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#manualControls.hidden {
+    opacity: 0;
+    pointer-events: none; /* Disable interaction */
+}

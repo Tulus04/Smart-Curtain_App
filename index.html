@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorden Kontrol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+
+    </div>
+    <header>
+        <img src="img/politani.PNG" alt="Logo Kiri" class="logo logo-left">
+        <img src="img/trpl.PNG" alt="Logo Kanan" class="logo logo-right">
+    </header>
+    <h1>Gorden Kontrol</h1>
+    <div>
+        <button onclick="setMode('manual')">Manual Mode</button>
+        <button onclick="setMode('auto')">Automatic Mode</button>
+    </div>
+    <div id="manualControls">
+        <button id="leftButton">Tutup Gorden</button>
+        <button id="rightButton">Buka Gorden</button>
+    </div>
+    <div id="status">Status: </div><br>
+    <div id="ldrValue">Intensitas Cahaya: 0</div>
+    <script src="script.js"></script>
+</body>
+</html>
